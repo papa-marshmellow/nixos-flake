@@ -1,5 +1,5 @@
 {
-  description = "Logan's personal pc's flake";
+  description = "Logan\'s personal pc\'s flake";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/release-22.05";
