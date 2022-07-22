@@ -1,6 +1,4 @@
 {
-  name = "logans flake";
-  epoch = 2022;
   description = "Logans personal flake";
 
   inputs = {
