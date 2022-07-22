@@ -1,4 +1,6 @@
 {
+  name = "logans flake";
+  epoch = 2022;
   description = "Logans personal flake";
 
   inputs = {
@@ -35,21 +37,21 @@
             }
           ];
         };
-        vm = lib.nixosSystem {
-          inherit system;
-          modules = [
-            ./configuration.nix
-            home-manager.nixosModules.home-manager {
-              home-manager = {
-                useGlobalPkgs = true;
-                useUserPackages = true;
-                users.marshey = {
-                  imports = [ ./hosts/vm/vm.nix ];
-                };
-              };
-            }
-          ];
-        };
+        #vm = lib.nixosSystem {
+        #  inherit system;
+        #  modules = [
+        #    ./configuration.nix
+        #    home-manager.nixosModules.home-manager {
+        #      home-manager = {
+        #        useGlobalPkgs = true;
+        #        useUserPackages = true;
+        #        users.marshey = {
+        #          imports = [ ./hosts/vm/vm.nix ];
+        #        };
+        #      };
+        #    }
+        #  ];
+        #};
       };
     };
 }
