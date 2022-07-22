@@ -8,7 +8,7 @@
         global = {
           width = 400;
           height = 300;
-          offset = "30x50";
+          offset = "20x50";
           origin = "top-right";
           transparency = 10;
           frame_color = "#2AA198";

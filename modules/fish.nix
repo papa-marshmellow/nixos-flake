@@ -14,9 +14,8 @@
       "find" = "fd";
       "ls" = "exa";
       "ll" = "exa -l";
-      "la" = "exa -a";
-      "lla" = "exa -la";
-      "grep" = "ripgrep";
+      "la" = "exa -la";
+      "grep" = "rg";
       };
     };
   };
