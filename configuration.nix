@@ -151,13 +151,6 @@
     })
   ];
 
-  system = {
-    autoUpgrade = {
-      enable = true;
-      channel = "https://nixos.org/channels/release-22.05";
-    };
-  };
-
   system.stateVersion = "22.05";
 
 }
