@@ -4,6 +4,7 @@
   programs = {
     neovim = {
       enable = true;
+      coc.enable = true;
       plugins = with pkgs.vimPlugins; [
         nerdcommenter
         vim-fugitive
@@ -20,7 +21,7 @@
         NeoSolarized
         nvim-autopairs
         indent-blankline-nvim
-        YouCompleteMe
+        # YouCompleteMe
       ];
       extraConfig = ''
         let g:airline_theme="solarized"

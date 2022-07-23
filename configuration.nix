@@ -138,9 +138,6 @@
     # Allow xwayland for wayland apps
     xwayland.enable = true;
 
-    # Enable git
-    git.enable = true;
-
   };
 
   fonts.fonts = with pkgs; [

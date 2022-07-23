@@ -1,10 +1,10 @@
 {
-  description = "A very basic flake";
+  description = "Logans personal flake";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/release-22.05";
     home-manager = {
-      url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/add-package-to-coc-nvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -29,7 +29,7 @@
                 useGlobalPkgs = true;
                 useUserPackages = true;
                 users.marshey = {
-                  imports = [ import ./hosts/laptop/laptop.nix ];
+                  imports = [( import ./hosts/laptop/laptop.nix )];
                 };
               };
             }
@@ -44,7 +44,7 @@
                 useGlobalPkgs = true;
                 useUserPackages = true;
                 users.marshey = {
-                  imports = [ import ./hosts/vm/vm.nix ];
+                  imports = [( import ./hosts/vm/vm.nix )];
                 };
               };
             }
