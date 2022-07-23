@@ -113,7 +113,7 @@
     description = "Logan Thompson";
     extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     initialPassword = "password";
-    shell = pkgs.fish;
+    # shell = pkgs.fish;
   };
 
   services = {
