@@ -69,7 +69,7 @@
   services.xserver = {
     enable = true;
     displayManager.lightdm.enable = true;
-    # windowManager.bspwm.enable = true;
+    windowManager.bspwm.enable = true;
 
     # Confiure keyboard layout
     layout = "us";
@@ -136,7 +136,7 @@
     dconf.enable = true;
 
     # Allow xwayland for wayland apps
-    xwayland.enable = true;
+    # xwayland.enable = true;
 
   };
 
