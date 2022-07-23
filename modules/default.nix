@@ -4,7 +4,7 @@
   imports = [
     ( import ./bspwm.nix )
     ( import ./sxhkd.nix )
-    ( import ./environment.nix )
+    ( import ./home.nix )
     ( import ./alacritty.nix )
     ( import ./fish.nix )
     ( import ./picom.nix )
