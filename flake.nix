@@ -29,7 +29,7 @@
                 useGlobalPkgs = true;
                 useUserPackages = true;
                 users.marshey = {
-                  imports = [{ import ./hosts/laptop/laptop.nix )];
+                  imports = [ import ./hosts/laptop/laptop.nix ];
                 };
               };
             }
@@ -44,7 +44,7 @@
                 useGlobalPkgs = true;
                 useUserPackages = true;
                 users.marshey = {
-                  imports = [( import ./hosts/vm/vm.nix )];
+                  imports = [ import ./hosts/vm/vm.nix ];
                 };
               };
             }
