@@ -136,7 +136,10 @@
     dconf.enable = true;
 
     # Allow xwayland for wayland apps
-    # xwayland.enable = true;
+    xwayland.enable = true;
+
+    # Enable git
+    git.enable = true;
 
   };
 

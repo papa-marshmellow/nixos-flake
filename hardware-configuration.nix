@@ -16,7 +16,7 @@
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/bf3c70eb-fd1f-4aa5-bc0f-5bf28b3d0b42";
       fsType = "btrfs";
-      options = [ "subvol=@ compression=zstd noatime autodefrag ssd ssd_spread clear_cache " ];
+      options = [ "subvol=@" "compression=zstd" "noatime" "autodefrag" "ssd" "ssd_spread" "clear_cache" ];
     };
 
   boot.initrd.luks.devices."luks-cd3b4a0d-82e8-4b81-aab5-b053e11aaf37".device = "/dev/disk/by-uuid/cd3b4a0d-82e8-4b81-aab5-b053e11aaf37";
