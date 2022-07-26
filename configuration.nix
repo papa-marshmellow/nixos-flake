@@ -21,17 +21,6 @@
     };
   };
 
-  boot.kernelPackages = pkgs.linuxPackages_zen;
-
-  # Setup keyfile
-  boot.initrd.secrets = {
-    "/crypto_keyfile.bin" = null;
-  };
-
-  # Enable swap on luks
-  boot.initrd.luks.devices."luks-b21098ae-a29f-4f14-bb51-f373f3ab89a4".device = "/dev/disk/by-uuid/b21098ae-a29f-4f14-bb51-f373f3ab89a4";
-  boot.initrd.luks.devices."luks-b21098ae-a29f-4f14-bb51-f373f3ab89a4".keyFile = "/crypto_keyfile.bin";
-
   environment = {
     variables = {
       TERMINAL = "alacritty";
@@ -106,6 +95,11 @@
     killall
     unrar
     unzip
+    traceroute
+    ripgrep
+    exa
+    ranger
+    fd
   ];
 
   users.users.marshey = {
