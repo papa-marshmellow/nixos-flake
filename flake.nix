@@ -29,7 +29,7 @@
                 useGlobalPkgs = true;
                 useUserPackages = true;
                 users.marshey = {
-                  imports = [( import ./hosts/laptop/laptop.nix )];
+                  imports = [( import ./hosts/laptop/home.nix )];
                 };
               };
             }
@@ -44,7 +44,23 @@
                 useGlobalPkgs = true;
                 useUserPackages = true;
                 users.marshey = {
-                  imports = [( import ./hosts/vm/vm.nix )];
+                  imports = [( import ./hosts/vm/home.nix )];
+                };
+              };
+            }
+          ];
+        };
+        desktop = lib.nixosSystem {
+          inherit system;
+          modules = [
+            ./configuration.nix
+            ./hosts/desktop/configuration.nix
+            home-manager.nixosModules.home-manager {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                users.marshey = {
+                  imports = [( import ./hosts/desktop/home.nix )];
                 };
               };
             }
