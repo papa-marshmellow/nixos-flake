@@ -121,6 +121,9 @@
     # Mullvad VPN
     mullvad-vpn.enable = true;
 
+    # Enable PC/SC
+    pcscd.enable = true;
+
   };
 
   programs = {
