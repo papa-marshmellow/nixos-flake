@@ -28,7 +28,6 @@
     discord
     wineWowPackages.staging
     mullvad-vpn
-    xfce.thunar
     pa_applet
     brightnessctl
     ranger

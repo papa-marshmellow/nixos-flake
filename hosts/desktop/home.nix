@@ -30,6 +30,11 @@
     mullvad-vpn
     pa_applet
     brightnessctl
+    ranger
+    exa
+    fd
+    ripgrep
+    cmus
   ];
 
   xsession = {
