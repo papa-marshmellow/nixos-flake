@@ -35,6 +35,7 @@
     exa
     fd
     ripgrep
+    cmus
   ];
 
   xsession = {
