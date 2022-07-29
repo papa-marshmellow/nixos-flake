@@ -24,7 +24,7 @@
           foreground = "\${colors.foreground}";
           height = "30px";
           module-margin = 1;
-          modules-left = "powermenu xworkspaces";
+          modules-left = "powermenu bspwm";
           modules-center = "date";
           modules-right = "battery";
           override-redirect = "true";
@@ -57,18 +57,14 @@
           label = "%time%";
           time = "%a %l:%M %P";
         };
-        "module/xworkspaces" = {
-          type = "internal/xworkspaces";
-          label-active = "%index%";
-          label-active-background = "\${colors.background-alt}";
-          label-active-padding = 1;
-          label-active-underline = "\${colors.primary}";
-          label-empty = "%index%";
-          label-empty-padding = 1;
-          label-occupied = "%index%";
-          label-occupied-padding = 1;
-          label-urgent = "%index%";
-          label-urgent-padding = 1;
+        "module/bspwm" = {
+          type = "internal/bspwm";
+          label-dimmed = " %index% ";
+          label-focused = " %index% ";
+          label-focused-background = "\${colors.background-alt}";
+          label-occupied = " %index% ";
+          label-urgent = " %index% ";
+          label-empty = " %index% ";
         };
         "module/powermenu" = {
           type = "custom/menu";
