@@ -2,9 +2,9 @@
   description = "Logans personal flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/release-22.05";
+    nixpkgs.url = "github:nixos/nixpkgs/latest";
     home-manager = {
-      url = "github:nix-community/home-manager/release-22.05";
+      url = "github:nix-community/home-manager/latest";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
