@@ -24,14 +24,16 @@
           foreground = "\${colors.foreground}";
           height = "30px";
           module-margin = 1;
-          modules-left = "xworkspaces";
+          modules-left = "powermenu xworkspaces";
           modules-center = "date";
           modules-right = "battery";
           override-redirect = "true";
+          padding-left = 1;
           padding-right = 1;
           tray-position = "right";
           width = "100%";
           wm-restack = "bspwm";
+          separator = "";
         };
         "module/battery" = {
           type = "internal/battery";
@@ -67,6 +69,17 @@
           label-occupied-padding = 1;
           label-urgent = "%index%";
           label-urgent-padding = 1;
+        };
+        "module/powermenu" = {
+          type = "custom/menu";
+          expand-right = true;
+          label-open = "pwr";
+          label-close = "X";
+          label-separator = " ";
+          menu-0-0 = "shutdown";
+          menu-0-0-exec = "poweroff";
+          menu-0-1 = "restart";
+          menu-0-1-exec = "reboot";
         };
         "settings" = {
           pseudo-transparency = "true";
