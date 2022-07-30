@@ -30,6 +30,9 @@
   # Set lid switch action
   services.logind.lidSwitch = "ignore";
 
+  # Enable phone mounting
+  services.gvfs.enable = true;
+
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     virt-manager
