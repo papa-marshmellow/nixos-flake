@@ -27,6 +27,9 @@
   # Enable Qemu/KVM
   virtualisation.libvirtd.enable = true;
 
+  # Set lid switch action
+  services.logind.lidSwitch = "ignore";
+
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     virt-manager
