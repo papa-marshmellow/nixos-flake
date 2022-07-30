@@ -35,6 +35,8 @@
     fd
     ripgrep
     cmus
+    veracrypt
+    xfce.thunar
   ];
 
   xsession = {
