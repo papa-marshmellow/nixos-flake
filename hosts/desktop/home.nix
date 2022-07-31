@@ -23,13 +23,13 @@
     steam
     librewolf
     keepassxc
-    deluge
     spotify
     discord
     wineWowPackages.staging
     mullvad-vpn
     pa_applet
     brightnessctl
+    xfce.thunar
     ranger
     exa
     fd

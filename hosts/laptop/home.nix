@@ -23,7 +23,6 @@
     steam
     librewolf
     keepassxc
-    deluge
     spotify
     discord
     wineWowPackages.staging
