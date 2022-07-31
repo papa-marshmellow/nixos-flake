@@ -22,19 +22,14 @@
     pavucontrol
     steam
     librewolf
-    keepassxc
     spotify
     discord
     wineWowPackages.staging
     mullvad-vpn
-    pa_applet
     brightnessctl
     xfce.thunar
-    ranger
-    exa
-    fd
-    ripgrep
     cmus
+    veracrypt
   ];
 
   xsession = {

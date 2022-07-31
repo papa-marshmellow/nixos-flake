@@ -18,24 +18,16 @@
 
   # Install applications
   home.packages = with pkgs; [
-    neofetch
-    pavucontrol
     steam
     librewolf
-    keepassxc
     spotify
     discord
     wineWowPackages.staging
-    mullvad-vpn
-    pa_applet
     brightnessctl
-    ranger
-    exa
-    fd
-    ripgrep
     cmus
     veracrypt
     xfce.thunar
+    mullvad-vpn
   ];
 
   xsession = {

@@ -30,6 +30,9 @@
   # Set lid switch action
   services.logind.lidSwitch = "ignore";
 
+  # Enable trackpad
+  services.xserver.libinput.enable = true;
+
   # Enable phone mounting
   services.gvfs.enable = true;
 
