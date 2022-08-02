@@ -36,6 +36,8 @@
   # Enable phone mounting
   services.gvfs.enable = true;
 
+  # Enable android connection with adb
+  programs.adb.enable = true;
   # Enable deluge bittorent
   services.deluge.enable = true;
 
