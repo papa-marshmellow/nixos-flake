@@ -6,11 +6,11 @@
     vSync = true;
     backend = "glx";
     experimentalBackends = true;
-    fade = true;
     opacityRules = [
-      "70:class_g = 'Alacritty'"
-      "70:class_g = 'Thunar'"
-    ];
-    settings.blur.method = "dual_kawase";
+      "class_g:70 'Alacritty'"
+      "class_g:70 'Thunar'"
+    };
+    blur.method = "dual_kawase";
+    fade = true;
   };
 }
