@@ -27,10 +27,11 @@
     wineWowPackages.staging
     mullvad-vpn
     brightnessctl
-    xfce.thunar
     cmus
     veracrypt
     gnucash
+    xfce.thunar
+    xfce.xfce4-terminal
   ];
 
   xsession = {

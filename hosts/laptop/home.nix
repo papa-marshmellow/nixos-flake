@@ -27,6 +27,7 @@
     cmus
     veracrypt
     xfce.thunar
+    xfce.xfce4-terminal
     mullvad-vpn
     gnucash
   ];
