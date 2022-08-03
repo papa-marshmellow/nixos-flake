@@ -30,6 +30,7 @@
     xfce.thunar
     cmus
     veracrypt
+    gnucash
   ];
 
   xsession = {

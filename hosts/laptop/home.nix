@@ -28,6 +28,7 @@
     veracrypt
     xfce.thunar
     mullvad-vpn
+    gnucash
   ];
 
   xsession = {
