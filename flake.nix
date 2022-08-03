@@ -2,7 +2,7 @@
   description = "Logans personal flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nix-latest";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     home-manager = {
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";

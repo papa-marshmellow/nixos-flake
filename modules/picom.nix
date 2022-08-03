@@ -7,10 +7,12 @@
     backend = "glx";
     experimentalBackends = true;
     opacityRules = [
-      "class_g:70 'Alacritty'"
-      "class_g:70 'Thunar'"
+      "75:class_g = 'Alacritty'"
+      "75:class_g = 'Thunar'"
+    ];
+    settings = {
+      blur.method = "dual_kawase";
     };
-    blur.method = "dual_kawase";
     fade = true;
   };
 }
