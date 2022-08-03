@@ -19,9 +19,6 @@
   # Enable Qemu/KVM
   virtualisation.libvirtd.enable = true;
 
-  # Enable deluge bittorrent
-  services.deluge.enable = true;
-
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     virt-manager

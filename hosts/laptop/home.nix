@@ -30,6 +30,7 @@
     xfce.xfce4-terminal
     mullvad-vpn
     gnucash
+    python3.9-deluge
   ];
 
   xsession = {

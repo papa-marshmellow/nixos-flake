@@ -32,6 +32,7 @@
     gnucash
     xfce.thunar
     xfce.xfce4-terminal
+    python3.9-deluge
   ];
 
   xsession = {

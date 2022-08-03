@@ -39,9 +39,6 @@
   # Enable android connection with adb
   programs.adb.enable = true;
 
-  # Enable deluge bittorent
-  services.deluge.enable = true;
-
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     virt-manager
