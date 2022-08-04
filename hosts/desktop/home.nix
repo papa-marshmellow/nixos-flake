@@ -36,6 +36,7 @@
     mate.atril
     ardour
     swh_lv2
+    lsp-plugins
   ];
 
   xsession = {
