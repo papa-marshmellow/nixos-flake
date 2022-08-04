@@ -33,6 +33,7 @@
     xfce.thunar
     xfce.xfce4-terminal
     deluge
+    atril
   ];
 
   xsession = {
