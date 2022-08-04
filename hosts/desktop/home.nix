@@ -37,6 +37,7 @@
     ardour
     swh_lv2
     lsp-plugins
+    guitarix
   ];
 
   xsession = {
