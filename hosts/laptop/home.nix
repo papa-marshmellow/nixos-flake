@@ -31,7 +31,7 @@
     mullvad-vpn
     gnucash
     deluge
-    atril
+    mate.atril
   ];
 
   xsession = {
