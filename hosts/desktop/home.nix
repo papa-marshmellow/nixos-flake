@@ -35,6 +35,7 @@
     deluge
     mate.atril
     ardour
+    swh_lv2
   ];
 
   xsession = {
