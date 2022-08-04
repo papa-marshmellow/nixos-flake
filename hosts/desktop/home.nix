@@ -34,6 +34,7 @@
     xfce.xfce4-terminal
     deluge
     mate.atril
+    ardour
   ];
 
   xsession = {
