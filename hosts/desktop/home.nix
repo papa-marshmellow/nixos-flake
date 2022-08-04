@@ -39,6 +39,7 @@
     lsp-plugins
     guitarix
     tonelib-metal
+    tonelib-gfx
   ];
 
   xsession = {
