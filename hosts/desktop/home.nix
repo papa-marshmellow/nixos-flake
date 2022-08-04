@@ -38,6 +38,7 @@
     swh_lv2
     lsp-plugins
     guitarix
+    tonelib-metal
   ];
 
   xsession = {
