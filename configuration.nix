@@ -109,9 +109,8 @@
   users.users.marshey = {
     isNormalUser = true;
     description = "Logan Thompson";
-    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "jackaudio" ];
     initialPassword = "password";
-    # shell = pkgs.fish;
   };
 
   services = {
