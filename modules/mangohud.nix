@@ -25,7 +25,7 @@
     };
     settingsPerApplication = {
       mpv = {
-        no_display = true;
+        no_display = false;
       };
     };
   };
