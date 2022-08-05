@@ -20,7 +20,6 @@
   home.packages = with pkgs; [
     neofetch
     pavucontrol
-    steam
     librewolf
     spotify
     discord

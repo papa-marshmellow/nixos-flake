@@ -18,7 +18,6 @@
 
   # Install applications
   home.packages = with pkgs; [
-    steam
     librewolf
     spotify
     discord
