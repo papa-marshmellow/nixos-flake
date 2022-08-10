@@ -5,7 +5,7 @@
     enable = true;
     settings = {
       background_alpha = "0.4";
-      font_size = "20";
+      font_size = "24";
       background_color = "002B36";
       text_color = "FDF6E3";
       position = "top-left";
@@ -13,14 +13,12 @@
       time = true;
       time_format = "%a %l:%M %P";
       media_player = true;
+      media_player_format = "{title};{artist}";
+      font_scale_media_player = 1.05;
       battery_icon = true;
-      cpu_temp = true;
-      cpu_color = "2AA198";
-      gpu_temp = true;
-      gpu_color = "859900";
-      ram = true;
-      ram_color = "D33682";
-      frame_timing= false;
+      cpu_stats = 0;
+      gpu_stats = 0;
+      frame_timing= 0;
     };
     settingsPerApplication = {
       mpv = {
@@ -28,22 +26,20 @@
       };
       "Terraria.bin.x86_64" = {
         background_alpha = "0.4";
-        font_size = "20";
+        font_size = "24";
         background_color = "002B36";
         text_color = "FDF6E3";
-        position = "top-center";
+        position = "bottom-left";
         toggle_hud = "F11";
         time = true;
         time_format = "%a %l:%M %P";
         media_player = true;
+        media_player_format = "{title};{artist}";
+        font_scale_media_player = 1.05;
         battery_icon = true;
-        cpu_temp = true;
-        cpu_color = "2AA198";
-        gpu_temp = true;
-        gpu_color = "859900";
-        ram = true;
-        ram_color = "D33682";
-        frame_timing= false;
+        cpu_stats = 0;
+        gpu_stats = 0;
+        frame_timing= 0;
       };
     };
   };
