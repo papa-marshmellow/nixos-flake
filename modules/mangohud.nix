@@ -29,7 +29,7 @@
         font_size = "24";
         background_color = "002B36";
         text_color = "FDF6E3";
-        position = "bottom-left";
+        position = "top-center";
         toggle_hud = "F11";
         time = true;
         time_format = "%a %l:%M %P";
