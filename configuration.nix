@@ -106,6 +106,7 @@
     pavucontrol
     keepassxc
     neofetch
+    cmatrix
   ];
 
   users.users.marshey = {
