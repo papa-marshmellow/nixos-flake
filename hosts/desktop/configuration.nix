@@ -9,6 +9,7 @@
       enable = true;
       allowedTCPPorts = [  ];
       allowedUDPPorts = [  ];
+    wireless.iwd.enable = true;
     };
   };
 

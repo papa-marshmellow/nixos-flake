@@ -18,6 +18,7 @@
       allowedTCPPorts = [  ];
       allowedUDPPorts = [  ];
     };
+    wireless.iwd.enable = true;
   };
 
   # Bluetooth enable
