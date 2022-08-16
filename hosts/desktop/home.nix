@@ -39,6 +39,7 @@
     guitarix
     tonelib-metal
     tonelib-gfx
+    libreoffice
   ];
 
   xsession = {

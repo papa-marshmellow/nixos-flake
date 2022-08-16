@@ -31,6 +31,7 @@
     gnucash
     deluge
     mate.atril
+    libreoffice
   ];
 
   xsession = {
