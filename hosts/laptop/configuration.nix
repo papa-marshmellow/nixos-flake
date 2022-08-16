@@ -48,10 +48,6 @@
     virt-manager
   ];
 
-  programs = {
-
-    # Enable the ssh key agent on boot
-    ssh.startAgent = true;
-
-  };
+  # Enable the ssh key agent on boot
+  programs.ssh.startAgent = true;
 }
