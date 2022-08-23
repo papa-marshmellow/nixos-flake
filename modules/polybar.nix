@@ -74,8 +74,10 @@
           label-separator = " ";
           menu-0-0 = "shutdown";
           menu-0-0-exec = "poweroff";
-          menu-0-1 = "restart";
-          menu-0-1-exec = "reboot";
+          menu-0-1 = "hibernate";
+          menu-0-1-exec = "systemctl hibernate";
+          menu-0-2 = "restart";
+          menu-0-2-exec = "reboot";
         };
         "settings" = {
           pseudo-transparency = "true";
