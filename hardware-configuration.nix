@@ -13,6 +13,7 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
+  boot.resumeDevice = "/dev/nvme0n1p3";
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/bf3c70eb-fd1f-4aa5-bc0f-5bf28b3d0b42";
