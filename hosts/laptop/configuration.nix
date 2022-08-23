@@ -2,6 +2,7 @@
 
 {
   boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.resumeDevice = "/dev/mapper/luks-b21098ae-a29f-4f14-bb51-f373f3ab89a4";
 
   # Setup keyfile
   boot.initrd.secrets = {
