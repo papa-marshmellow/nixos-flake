@@ -2,6 +2,9 @@
 
 {
   boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelParams = [ "quiet" "splash" "udev.log_level=3" ];
+  boot.consoleLogLevel = 0;
+  boot.initrd.verbose = false;
   boot.resumeDevice = "/dev/mapper/luks-b21098ae-a29f-4f14-bb51-f373f3ab89a4";
 
   # Setup keyfile
