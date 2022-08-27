@@ -7,17 +7,6 @@
 {
   imports = [ ./hardware-configuration.nix ];
 
-  boot.loader = {
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot/efi";
-    };
-    systemd-boot = {
-      enable = true;
-      configurationLimit = 5;
-    };
-  };
-
   environment = {
     variables = {
       TERMINAL = "alacritty";
@@ -84,9 +73,6 @@
     pulse.enable = true;
     jack.enable = true;
     };
-    #jack = {
-    #  jackd.enable = true;
-    #};
   };
 
   # Git Service
@@ -111,6 +97,7 @@
     keepassxc
     neofetch
     cmatrix
+    polybar
   ];
 
   users.users.marshey = {
@@ -128,9 +115,6 @@
     # Enable flash drives
     udisks2.enable = true;
 
-    # Mullvad VPN
-    mullvad-vpn.enable = true;
-
     # Enable PC/SC
     pcscd.enable = true;
 
@@ -141,9 +125,6 @@
     gnupg.agent.enable = true;
 
     dconf.enable = true;
-
-    # Allow xwayland for wayland apps
-    xwayland.enable = true;
 
   };
 

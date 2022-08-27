@@ -7,6 +7,17 @@
   boot.initrd.verbose = false;
   boot.resumeDevice = "/dev/mapper/luks-b21098ae-a29f-4f14-bb51-f373f3ab89a4";
 
+  boot.loader = {
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot/efi";
+    };
+    systemd-boot = {
+      enable = true;
+      configurationLimit = 5;
+    };
+  };
+
   # Setup keyfile
   boot.initrd.secrets = {
     "/crypto_keyfile.bin" = null;
@@ -46,6 +57,9 @@
 
   # Enable Gamemode
   programs.gamemode.enable = true;
+
+  # Mullvad VPN
+  services.mullvad-vpn.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [

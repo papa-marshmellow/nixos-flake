@@ -3,6 +3,17 @@
 {
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
+  boot.loader = {
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot/efi";
+    };
+    systemd-boot = {
+      enable = true;
+      configurationLimit = 5;
+    };
+  };
+
   networking = {
     hostName = "fridge";
     firewall = {
@@ -25,6 +36,9 @@
 
   # Enable Gamemode
   programs.gamemode.enable = true;
+
+  # Mullvad VPN
+  services.mullvad-vpn.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
