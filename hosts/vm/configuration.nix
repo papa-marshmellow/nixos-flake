@@ -11,4 +11,5 @@
   networking = {
     hostName = "nix-box";
   };
+
 }
