@@ -3,6 +3,8 @@
 {
   services.picom = {
     enable = true;
+    vSync = true;
+    backend = "glx";
     experimentalBackends = true;
     opacityRules = [
       "75:class_g = 'Alacritty'"

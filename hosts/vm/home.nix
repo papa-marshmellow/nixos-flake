@@ -33,4 +33,10 @@
       };
     };
   };
+
+  services.picom = {
+    vSync = false;
+    backend = "xrender";
+  };
+
 }
