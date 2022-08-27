@@ -28,9 +28,6 @@
     # Network Manager applet
     network-manager-applet.enable = true;
 
-    # Bluetooth tray applet
-    blueman-applet.enable = true;
-
     # Flash drive mounting
     udiskie.enable = true;
 

@@ -34,6 +34,9 @@
     libreoffice
   ];
 
+  # Bluetooth tray applet
+  services.blueman-applet.enable = true;
+
   xsession = {
     windowManager = {
       bspwm = {
