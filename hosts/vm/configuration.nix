@@ -5,7 +5,7 @@
   boot.loader.grub = {
     enable = true;
     version = 2;
-    devices = [ "/dev/vda1" ];
+    device = "/dev/vda";
   };
 
   networking = {
