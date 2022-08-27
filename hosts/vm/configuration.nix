@@ -8,6 +8,13 @@
     device = "/dev/vda";
   };
 
+  services.xserver.resolutions = [
+    {
+      x = 1600;
+      y = 900;
+    };
+  ];
+
   networking = {
     hostName = "nix-box";
   };

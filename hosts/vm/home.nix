@@ -26,10 +26,9 @@
         startupPrograms = [
           "polybar mybar -r"
           "pa-applet"
-          "xrandr --screen 0 --size 1600x900"
         ];
         monitors = {
-#           eDP = [ "1" "2" "3" "4" "5" "6" "7" "8" "9" "0" ];
+          Virtual-1 = [ "1" "2" "3" "4" "5" "6" "7" "8" "9" "0" ];
         };
       };
     };
