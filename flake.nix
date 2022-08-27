@@ -39,6 +39,7 @@
           inherit system;
           modules = [
             ./configuration.nix
+            ./hosts/vm/configuration.nix
             home-manager.nixosModules.home-manager {
               home-manager = {
                 useGlobalPkgs = true;
