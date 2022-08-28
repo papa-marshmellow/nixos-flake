@@ -20,7 +20,9 @@
   home.packages = with pkgs; [
     librewolf
     spotify
+    spicetify-cli
     discord
+    betterdiscordctl
     wineWowPackages.staging
     brightnessctl
     cmus
