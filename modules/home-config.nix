@@ -1,15 +1,16 @@
 { pkgs, ... }:
 
 {
-# home = {
-#   pointercursor = {
-#     package = pkgs.numix-cursor-theme;
-#     name = "numix-cursor-light";
-#     size = 32;
-#     gtk.enable = true;
-#     x11.enable = true;
-#   };
-# };
+
+  #home = {
+  #  pointerCursor = {
+  #    package = pkgs.numix-cursor-theme;
+  #    name = "numix-cursor-light";
+  #    size = 32;
+  #    gtk.enable = true;
+  #    x11.enable = true;
+  #  };
+  #};
 
   gtk = {
     enable = true;

@@ -42,7 +42,6 @@
 
     enable = true;
     displayManager.lightdm.enable = true;
-    windowManager.bspwm.enable = true;
 
     # Confiure keyboard layout
     layout = "us";
