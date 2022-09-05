@@ -5,7 +5,6 @@
     ( import ./bspwm.nix )
     ( import ./sxhkd.nix )
     ( import ./home-config.nix )
-    ( import ./alacritty.nix )
     ( import ./fish.nix )
     ( import ./picom.nix )
     ( import ./polybar.nix )
