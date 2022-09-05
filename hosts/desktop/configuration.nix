@@ -40,15 +40,12 @@
   # Mullvad VPN
   services.mullvad-vpn.enable = true;
 
+  # Enable the ssh key agent on boot
+  programs.ssh.startAgent = true;
+
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     virt-manager
   ];
 
-  programs = {
-
-    # Enable the ssh key agent on boot
-    ssh.startAgent = true;
-
-  };
 }
