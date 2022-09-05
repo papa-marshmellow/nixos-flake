@@ -61,6 +61,9 @@
   # Mullvad VPN
   services.mullvad-vpn.enable = true;
 
+  # Enable xpadneo for xbox one controller support
+  hardware.xpadneo.enable = true;
+
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     virt-manager
