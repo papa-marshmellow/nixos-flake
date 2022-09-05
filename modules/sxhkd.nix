@@ -7,7 +7,7 @@
       keybindings = {
         # WM independant keys
         # Terminal
-        "super + Return" = "alacritty -e fish";
+        "super + Return" = "urxvt -e fish";
         # Application launcher
         "super + @space" = "rofi -show drun";
         # Reload sxhkd files
