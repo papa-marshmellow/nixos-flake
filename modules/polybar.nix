@@ -59,12 +59,12 @@
         };
         "module/bspwm" = {
           type = "internal/bspwm";
-          label-dimmed = " %index% ";
-          label-focused = " %index% ";
+          label-dimmed = " %name% ";
+          label-focused = " %name% ";
           label-focused-background = "\${colors.background-alt}";
-          label-occupied = " %index% ";
-          label-urgent = " %index% ";
-          label-empty = " %index% ";
+          label-occupied = " %name% ";
+          label-urgent = " %name% ";
+          label-empty = " %name% ";
         };
         "module/powermenu" = {
           type = "custom/menu";
