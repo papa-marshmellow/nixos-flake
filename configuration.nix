@@ -42,6 +42,7 @@
 
     enable = true;
     displayManager.lightdm.enable = true;
+    windowManager.bspwm.enable = true;
 
     # Confiure keyboard layout
     layout = "us";
@@ -80,7 +81,9 @@
     firefox
     ffmpeg_5
     killall
+    p7zip
     unrar
+    zip
     unzip
     traceroute
     ripgrep
@@ -93,12 +96,13 @@
     neofetch
     cmatrix
     polybar
+    xfce.xfce4-screenshooter
   ];
 
   users.users.marshey = {
     isNormalUser = true;
     description = "Logan Thompson";
-    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "i2c" ];
     initialPassword = "password";
   };
 

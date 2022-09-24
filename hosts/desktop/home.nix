@@ -33,13 +33,15 @@
     xfce.xfce4-terminal
     deluge
     mate.atril
-    ardour
-    swh_lv2
-    lsp-plugins
-    guitarix
-    tonelib-metal
-    tonelib-gfx
+#    ardour
+#    swh_lv2
+#    lsp-plugins
+#    guitarix
+#    tonelib-metal
+#    tonelib-gfx
+    gimp
     libreoffice
+    openrgb
   ];
 
   # Bluetooth tray applet
@@ -54,9 +56,11 @@
           "deluge-gtk"
           "blueman-applet"
           "pa-applet"
+          "$HOME/.screenlayout/default.sh"
+          "feh --bg-fill $HOME/.background-image.jpg"
         ];
         monitors = {
-#          eDP = [ "1" "2" "3" "4" "5" "6" "7" "8" "9" "0" ];
+          DisplayPort-0 = [ "1" "2" "3" "4" "5" "6" "7" "8" "9" "0" ];
         };
       };
     };

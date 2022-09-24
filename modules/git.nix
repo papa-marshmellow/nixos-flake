@@ -3,7 +3,7 @@
 {
   programs.git = {
     enable = true;
-    userName = "papa-marshmellow";
+    userName = "lowgain";
     userEmail = "logan.t2020@tutanota.com";
   };
 }

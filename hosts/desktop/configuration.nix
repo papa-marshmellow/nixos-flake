@@ -4,13 +4,12 @@
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
   boot.loader = {
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot/efi";
-    };
-    systemd-boot = {
+    efi.canTouchEfiVariables = true;
+    grub = {
       enable = true;
-      configurationLimit = 5;
+      efiSupport = true;
+      device = "nodev";
+      useOSProber = true;
     };
   };
 
@@ -20,8 +19,8 @@
       enable = true;
       allowedTCPPorts = [  ];
       allowedUDPPorts = [  ];
-    wireless.iwd.enable = true;
     };
+    wireless.iwd.enable = true;
   };
 
   # Bluetooth enable
@@ -42,6 +41,9 @@
 
   # Enable the ssh key agent on boot
   programs.ssh.startAgent = true;
+
+  # Enable i2c
+  hardware.i2c.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
