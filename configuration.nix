@@ -78,6 +78,7 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
+    pciutils
     firefox
     ffmpeg_5
     killall

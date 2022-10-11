@@ -54,6 +54,9 @@
   # Enable xpadneo for xbox one controller support
   hardware.xpadneo.enable = true;
 
+  # Enable MYSQL
+  services.mysql.enable = true;
+
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     virt-manager

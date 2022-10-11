@@ -2,6 +2,7 @@
 
 {
   boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelParams = [ "quiet" "splash" ];
 
   boot.loader = {
     efi.canTouchEfiVariables = true;
@@ -44,6 +45,9 @@
 
   # Enable i2c
   hardware.i2c.enable = true;
+
+  # Enable MYSQL
+  services.mysql.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [

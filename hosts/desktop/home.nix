@@ -22,17 +22,20 @@
     pavucontrol
     librewolf
     spotify
+    spicetify-cli
     discord
+    betterdiscordctl
     wineWowPackages.staging
+    lutris
     mullvad-vpn
     brightnessctl
     cmus
     veracrypt
     gnucash
     xfce.thunar
-    xfce.xfce4-terminal
     deluge
     mate.atril
+    gamemode
 #    ardour
 #    swh_lv2
 #    lsp-plugins
@@ -57,7 +60,7 @@
           "blueman-applet"
           "pa-applet"
           "$HOME/.screenlayout/default.sh"
-          "feh --bg-fill $HOME/.background-image.jpg"
+          "feh --bg-fill $HOME/.background-image.*"
         ];
         monitors = {
           DisplayPort-0 = [ "2" "3" "4" "5" "6" "7" "8" "9" "0" ];
