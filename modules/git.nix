@@ -6,4 +6,8 @@
     userName = "lowgain";
     userEmail = "logan.t2020@tutanota.com";
   };
+
+  programs.gh = {
+    enable = true;
+  };
 }

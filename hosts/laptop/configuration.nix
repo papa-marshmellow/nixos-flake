@@ -56,6 +56,7 @@
 
   # Enable MYSQL
   services.mysql.enable = true;
+  services.mysql.package = pkgs.mysql80;
 
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [

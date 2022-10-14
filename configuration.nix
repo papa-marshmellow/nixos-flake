@@ -103,7 +103,7 @@
   users.users.marshey = {
     isNormalUser = true;
     description = "Logan Thompson";
-    extraGroups = [ "networkmanager" "wheel" "libvirtd" "i2c" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "i2c" "mysql" ];
     initialPassword = "password";
   };
 
