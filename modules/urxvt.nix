@@ -18,8 +18,8 @@
       internalBorder = 15;
       background = "[75]#002B36";
       foreground = "#FDF6E3";
-      color0 = "#002b3b";
-      color8 = "#002b3b";
+      color0 = "#000000";
+      color8 = "#000000";
       color1 = "#CB4B16";
       color9 = "#CB4B16";
       color2 = "#859900";

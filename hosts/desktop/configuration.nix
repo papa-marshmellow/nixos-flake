@@ -55,4 +55,6 @@
     virt-manager
   ];
 
+  system.autoUpgrade.channel = "https://nixos.org/channels/nixos-unstable/";
+
 }
