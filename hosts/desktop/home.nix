@@ -33,7 +33,6 @@
     openrgb
     abcde
     jamesdsp
-    gtkcord4
     cura
     openscad
   ];
@@ -57,9 +56,10 @@
         startupPrograms = [
           "$HOME/.screenlayout/default.sh"
           "polybar mybar -r"
-          "mullvad-vpn"
           "deluge-gtk"
           "blueman-applet"
+          "pa-applet"
+          "jamesdsp"
           "feh --bg-fill $HOME/.background-image.*"
         ];
         monitors = {
