@@ -18,14 +18,11 @@
 
   # Install applications
   home.packages = with pkgs; [
-    neofetch
-    pavucontrol
     librewolf
     spotify
     discord
     wineWowPackages.staging
     lutris
-    mullvad-vpn
     brightnessctl
     cmus
     gnucash

@@ -28,6 +28,9 @@
   # Enable Qemu/KVM
   virtualisation.libvirtd.enable = true;
 
+  # Enable phone mounting
+  services.gvfs.enable = true;
+
   # Enable steam
   programs.steam.enable = true;
 
@@ -39,9 +42,6 @@
 
   # Enable the ssh key agent on boot
   programs.ssh.startAgent = true;
-
-  # Enable i2c
-  hardware.i2c.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [

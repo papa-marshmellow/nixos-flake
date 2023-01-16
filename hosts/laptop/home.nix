@@ -24,7 +24,6 @@
     wineWowPackages.staging
     brightnessctl
     xfce.thunar
-    mullvad-vpn
     gnucash
     deluge
     mate.atril
