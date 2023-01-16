@@ -146,7 +146,7 @@
     stateVersion = "23.05";
     autoUpgrade = {
       enable = true;
-      channel = "https://nixos.org/channels/nixos-unstable/";
+      channel = "https://nixos.org/channels/nixos-22.11/";
     };
   };
 
