@@ -19,10 +19,6 @@
 
   networking = {
     hostName = "frying-pan";
-    firewall = {
-      allowedTCPPorts = [  ];
-      allowedUDPPorts = [  ];
-    };
     wireless.iwd.enable = true;
   };
 
@@ -42,21 +38,8 @@
   # Enable phone mounting
   services.gvfs.enable = true;
 
-  # Enable steam
-  programs.steam.enable = true;
-
-  # Enable Gamemode
-  programs.gamemode.enable = true;
-
   # Mullvad VPN
   services.mullvad-vpn.enable = true;
-
-  # Enable xpadneo for xbox one controller support
-  hardware.xpadneo.enable = true;
-
-  # Enable MYSQL
-  services.mysql.enable = true;
-  services.mysql.package = pkgs.mysql80;
 
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
