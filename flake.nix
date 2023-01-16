@@ -28,7 +28,7 @@
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
-                users.marshey = {
+                users.lowgain = {
                   imports = [( import ./hosts/laptop/home.nix )];
                 };
               };
@@ -44,7 +44,7 @@
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
-                users.marshey = {
+                users.lowgain = {
                   imports = [( import ./hosts/vm/home.nix )];
                 };
               };
@@ -60,7 +60,7 @@
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
-                users.marshey = {
+                users.lowgain = {
                   imports = [( import ./hosts/desktop/home.nix )];
                 };
               };

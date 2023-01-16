@@ -103,7 +103,7 @@
     xfce.xfce4-screenshooter
   ];
 
-  users.users.marshey = {
+  users.users.lowgain = {
     isNormalUser = true;
     description = "Logan Thompson";
     extraGroups = [ "networkmanager" "wheel" "libvirtd" ];

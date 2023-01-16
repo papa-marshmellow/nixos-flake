@@ -1,12 +1,15 @@
 { config, pkgs, ... }:
 
 {
-  imports = [( import ../../modules )];
+  imports = [
+    ( import ../../modules )
+    ( import ../../modules/home-config.nix)
+  ];
 
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
-  home.username = "marshey";
-  home.homeDirectory = "/home/marshey";
+  home.username = "lowgain";
+  home.homeDirectory = "/home/lowgain";
 
   home.stateVersion = "22.11";
 
