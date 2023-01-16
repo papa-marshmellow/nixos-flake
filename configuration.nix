@@ -31,7 +31,10 @@
 
   networking = {
     networkmanager.enable = true;
-    firewall.enable = true;
+    firewall = {
+      enable = true;
+      allowedUDPPorts = [ 51820 ];
+      };
   };
 
   # Select internationalisation properties.
@@ -103,7 +106,7 @@
   users.users.marshey = {
     isNormalUser = true;
     description = "Logan Thompson";
-    extraGroups = [ "networkmanager" "wheel" "libvirtd" "i2c" "mysql" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "i2c" ];
     initialPassword = "password";
   };
 
