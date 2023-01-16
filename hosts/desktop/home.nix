@@ -28,7 +28,6 @@
     mullvad-vpn
     brightnessctl
     cmus
-    veracrypt
     gnucash
     xfce.thunar
     deluge
