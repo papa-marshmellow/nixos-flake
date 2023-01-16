@@ -19,6 +19,7 @@
       lib = nixpkgs.lib;
     in {
       nixosConfigurations = {
+
         laptop = lib.nixosSystem {
           inherit system;
           modules = [
@@ -35,6 +36,7 @@
             }
           ];
         };
+
         vm = lib.nixosSystem {
           inherit system;
           modules = [
@@ -51,6 +53,7 @@
             }
           ];
         };
+
         desktop = lib.nixosSystem {
           inherit system;
           modules = [
