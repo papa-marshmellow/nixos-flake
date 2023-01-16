@@ -2,7 +2,9 @@
 
 {
   boot.kernelPackages = pkgs.linuxPackages_zen;
-  boot.kernelParams = [ "quiet" "splash" ];
+  boot.kernelParams = [ "quiet" "splash" "udev.log_level=3" ];
+  boot.consoleLogLevel = 0;
+  boot.initrd.verbose = false;
 
   boot.loader = {
     efi.canTouchEfiVariables = true;
@@ -16,11 +18,6 @@
 
   networking = {
     hostName = "fridge";
-    firewall = {
-      enable = true;
-      allowedTCPPorts = [  ];
-      allowedUDPPorts = [  ];
-    };
     wireless.iwd.enable = true;
   };
 
@@ -46,15 +43,9 @@
   # Enable i2c
   hardware.i2c.enable = true;
 
-  # Enable MYSQL
-  services.mysql.enable = true;
-  services.mysql.package = pkgs.mysql80;
-
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     virt-manager
   ];
-
-  system.autoUpgrade.channel = "https://nixos.org/channels/nixos-unstable/";
 
 }
