@@ -17,8 +17,8 @@
   nixpkgs.config.allowUnfree = true;
 
   # Install applications
-  # home.packages = with pkgs; [
-  # ];
+  home.packages = with pkgs; [
+  ];
 
   xsession = {
     windowManager = {
