@@ -22,12 +22,8 @@
     wireless.iwd.enable = true;
   };
 
-  # Bluetooth enable
-  hardware.bluetooth.enable = true;
-  services.blueman.enable = true;
-
-  # Enable Qemu/KVM
-  virtualisation.libvirtd.enable = true;
+  # Mullvad VPN
+  services.mullvad-vpn.enable = true;
 
   # Set lid switch action
   services.logind.lidSwitch = "ignore";
@@ -35,17 +31,21 @@
   # Enable trackpad
   services.xserver.libinput.enable = true;
 
+  # Enable the ssh key agent on boot
+  programs.ssh.startAgent = true;
+
+  # Bluetooth enable
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
+
+  # Enable Qemu/KVM
+  virtualisation.libvirtd.enable = true;
+
   # Enable phone mounting
   services.gvfs.enable = true;
-
-  # Mullvad VPN
-  services.mullvad-vpn.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     virt-manager
   ];
-
-  # Enable the ssh key agent on boot
-  programs.ssh.startAgent = true;
 }

@@ -21,6 +21,12 @@
     wireless.iwd.enable = true;
   };
 
+  # Mullvad VPN
+  services.mullvad-vpn.enable = true;
+
+  # Enable the ssh key agent on boot
+  programs.ssh.startAgent = true;
+
   # Bluetooth enable
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
@@ -36,12 +42,6 @@
 
   # Enable Gamemode
   programs.gamemode.enable = true;
-
-  # Mullvad VPN
-  services.mullvad-vpn.enable = true;
-
-  # Enable the ssh key agent on boot
-  programs.ssh.startAgent = true;
 
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
