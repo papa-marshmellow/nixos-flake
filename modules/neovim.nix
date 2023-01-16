@@ -14,7 +14,6 @@
       nvim-treesitter
       nvim-cmp
       editorconfig-vim
-      # ale
       neoformat
       NeoSolarized
       nvim-autopairs
