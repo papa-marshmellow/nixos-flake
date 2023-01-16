@@ -22,9 +22,7 @@
     pavucontrol
     librewolf
     spotify
-    spicetify-cli
     discord
-    betterdiscordctl
     wineWowPackages.staging
     lutris
     mullvad-vpn
