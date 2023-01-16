@@ -26,13 +26,11 @@
     discord
     wineWowPackages.staging
     lutris
-    brightnessctl
     cmus
     gnucash
     xfce.thunar
     deluge
     mate.atril
-    gamemode
 #    ardour
 #    swh_lv2
 #    lsp-plugins
