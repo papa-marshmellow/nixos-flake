@@ -3,7 +3,7 @@
 {
   imports = [
     ( import ../../modules )
-    ( import ../../modules/home-config.nix)
+    ( import ../../modules/mangohud.nix)
   ];
 
   # Home Manager needs a bit of information about you and the
