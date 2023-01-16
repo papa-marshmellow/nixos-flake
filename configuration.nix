@@ -12,9 +12,7 @@
   };
 
   nix = {
-    settings = {
-      auto-optimise-store = true;
-    };
+    settings.auto-optimise-store = true;
     optimise.automatic = true;
     gc = {
       automatic = true;
@@ -65,17 +63,14 @@
   security.rtkit.enable = true;
   services = {
     pipewire = {
-    enable = true;
-    audio.enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
+      enable = true;
+      audio.enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+      jack.enable = true;
     };
   };
-
-  # Git Service
-  programs.git.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
