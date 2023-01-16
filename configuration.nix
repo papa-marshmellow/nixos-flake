@@ -117,6 +117,7 @@
 
     # Enable flash drives
     udisks2.enable = true;
+    udiskie.enable = true;
 
     # Enable PC/SC
     pcscd.enable = true;
@@ -125,9 +126,8 @@
 
   programs = {
 
+    # Enable the gnupg agent
     gnupg.agent.enable = true;
-
-    dconf.enable = true;
 
   };
 
