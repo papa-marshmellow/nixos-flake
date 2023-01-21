@@ -52,7 +52,7 @@
         startupPrograms = [
           "$HOME/.screenlayout/default.sh"
           "polybar mybar -r"
-          # "mullvad-vpn"
+          "mullvad-vpn"
           "deluge-gtk"
           "blueman-applet"
           "pa-applet"

@@ -23,7 +23,7 @@
   };
 
   # Mullvad VPN
-  # services.mullvad-vpn.enable = true;
+  services.mullvad-vpn.enable = true;
 
   # Set lid switch action
   services.logind.lidSwitch = "ignore";

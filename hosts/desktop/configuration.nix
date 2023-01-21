@@ -22,7 +22,7 @@
   };
 
   # Mullvad VPN
-  # services.mullvad-vpn.enable = true;
+  services.mullvad-vpn.enable = true;
 
   # Enable the ssh key agent on boot
   programs.ssh.startAgent = true;
