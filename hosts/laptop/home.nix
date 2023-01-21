@@ -28,6 +28,7 @@
     deluge
     mate.atril
     libreoffice
+    cmus
   ];
 
   # Bluetooth tray applet

@@ -18,7 +18,7 @@
       NeoSolarized
       nvim-autopairs
       indent-blankline-nvim
-      YouCompleteMe
+      # YouCompleteMe
     ];
     extraConfig = ''
       let g:airline_theme="solarized"

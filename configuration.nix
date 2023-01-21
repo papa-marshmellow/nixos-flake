@@ -96,6 +96,11 @@
     cmatrix
     polybar
     xfce.xfce4-screenshooter
+    xorg.xkill
+    ipmitool
+    jamesdsp
+    speedtest-cli
+    nmap
   ];
 
   users.users.lowgain = {
@@ -112,7 +117,6 @@
 
     # Enable flash drives
     udisks2.enable = true;
-    udiskie.enable = true;
 
     # Enable PC/SC
     pcscd.enable = true;
@@ -123,6 +127,9 @@
 
     # Enable the gnupg agent
     gnupg.agent.enable = true;
+
+    # Enable dconf for home manager daemon
+    dconf.enable = true;
 
   };
 

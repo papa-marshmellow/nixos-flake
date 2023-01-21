@@ -40,6 +40,7 @@
     gimp
     libreoffice
     openrgb
+    abcde
   ];
 
   # Bluetooth tray applet
