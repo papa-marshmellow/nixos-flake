@@ -50,12 +50,12 @@
     windowManager = {
       bspwm = {
         startupPrograms = [
+          "$HOME/.screenlayout/default.sh"
           "polybar mybar -r"
-          "mullvad-vpn"
+          # "mullvad-vpn"
           "deluge-gtk"
           "blueman-applet"
           "pa-applet"
-          "$HOME/.screenlayout/default.sh"
           "feh --bg-fill $HOME/.background-image.*"
         ];
         monitors = {
