@@ -56,6 +56,7 @@
           "deluge-gtk"
           "blueman-applet"
           "pa-applet"
+          "jamesdsp"
           "feh --bg-fill $HOME/.background-image.*"
         ];
         monitors = {
