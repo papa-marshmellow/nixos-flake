@@ -19,8 +19,6 @@
   # Install applications
   home.packages = with pkgs; [
     librewolf
-    spotify
-    discord
     brightnessctl
     xfce.thunar
     gnucash
@@ -29,6 +27,8 @@
     libreoffice
     cmus
     jamesdsp
+    spotify-tui
+    cordless
   ];
 
   # Bluetooth tray applet
@@ -36,6 +36,18 @@
 
   # Enable pasystray
   services.pasystray.enable = true;
+
+  # Enable spotifyd
+  services.spotifyd = {
+    enable = true;
+    settings = {
+      global = {
+        username = "Logan Logan";
+        password = /home/lowgain/Passwords/Spotify;
+        device_name = "Fridge";
+      };
+    };
+  };
 
   xsession = {
     windowManager = {
