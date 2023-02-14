@@ -39,7 +39,7 @@
     abcde
     jamesdsp
     spotify-tui
-    cordless
+    gtkcord4
   ];
 
   # Bluetooth tray applet
