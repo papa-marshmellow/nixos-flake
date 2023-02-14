@@ -40,6 +40,8 @@
     jamesdsp
     spotify-tui
     gtkcord4
+    cura
+    openscad
   ];
 
   # Bluetooth tray applet
