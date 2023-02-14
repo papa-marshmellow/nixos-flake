@@ -29,6 +29,7 @@
     mate.atril
     libreoffice
     cmus
+    jamesdsp
   ];
 
   # Bluetooth tray applet

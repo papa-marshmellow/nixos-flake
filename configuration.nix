@@ -95,7 +95,6 @@
     xfce.xfce4-screenshooter
     xorg.xkill
     ipmitool
-    jamesdsp
     speedtest-cli
     nmap
   ];

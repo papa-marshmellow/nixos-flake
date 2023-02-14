@@ -41,6 +41,7 @@
     libreoffice
     openrgb
     abcde
+    jamesdsp
   ];
 
   # Bluetooth tray applet
