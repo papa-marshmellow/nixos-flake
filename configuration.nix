@@ -29,10 +29,7 @@
 
   networking = {
     networkmanager.enable = true;
-    firewall = {
-      enable = true;
-      allowedUDPPorts = [ 51820 ];
-      };
+    firewall.enable = true;
   };
 
   # Select internationalisation properties.
