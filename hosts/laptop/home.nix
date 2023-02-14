@@ -21,7 +21,6 @@
     librewolf
     spotify
     discord
-    wineWowPackages.staging
     brightnessctl
     xfce.thunar
     gnucash

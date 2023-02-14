@@ -37,12 +37,6 @@
   # Enable phone mounting
   services.gvfs.enable = true;
 
-  # Enable steam
-  programs.steam.enable = true;
-
-  # Enable Gamemode
-  programs.gamemode.enable = true;
-
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     virt-manager

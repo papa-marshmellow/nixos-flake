@@ -24,8 +24,6 @@
     librewolf
     spotify
     discord
-    wineWowPackages.staging
-    lutris
     cmus
     gnucash
     xfce.thunar
