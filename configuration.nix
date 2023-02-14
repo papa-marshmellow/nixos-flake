@@ -86,7 +86,6 @@
     exa
     ranger
     fd
-    pa_applet
     pavucontrol
     keepassxc
     neofetch

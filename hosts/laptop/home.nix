@@ -35,6 +35,9 @@
   # Bluetooth tray applet
   services.blueman-applet.enable = true;
 
+  # Enable pasystray
+  services.pasystray.enable = true;
+
   xsession = {
     windowManager = {
       bspwm = {
@@ -43,7 +46,6 @@
           "mullvad-vpn"
           "deluge-gtk"
           "blueman-applet"
-          "pa-applet"
         ];
         monitors = {
           eDP = [ "1" "2" "3" "4" "5" "6" "7" "8" "9" "0" ];

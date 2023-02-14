@@ -47,6 +47,9 @@
   # Bluetooth tray applet
   services.blueman-applet.enable = true;
 
+  # Enable pasystray
+  services.pasystray.enable = true;
+
   xsession = {
     windowManager = {
       bspwm = {
@@ -56,7 +59,6 @@
           "mullvad-vpn"
           "deluge-gtk"
           "blueman-applet"
-          "pa-applet"
           "jamesdsp"
           "feh --bg-fill $HOME/.background-image.*"
         ];
