@@ -11,7 +11,7 @@
   home.username = "lowgain";
   home.homeDirectory = "/home/lowgain";
 
-  home.stateVersion = "22.11";
+  home.stateVersion = "23.05";
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
