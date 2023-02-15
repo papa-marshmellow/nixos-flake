@@ -37,6 +37,13 @@
   # Enable pasystray
   services.pasystray.enable = true;
 
+  # Enable ncspot
+  services.ncspot = {
+    enable = true;
+    settings = {
+    };
+  };
+
   xsession = {
     windowManager = {
       bspwm = {

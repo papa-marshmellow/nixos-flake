@@ -50,15 +50,10 @@
   # Enable pasystray
   services.pasystray.enable = true;
 
-  # Enable spotifyd
-  services.spotifyd = {
+  # Enable ncspot
+  services.ncspot = {
     enable = true;
     settings = {
-      global = {
-        username = "Logan Logan";
-        password = /home/lowgain/Passwords/Spotify;
-        device_name = "Fridge";
-      };
     };
   };
 
