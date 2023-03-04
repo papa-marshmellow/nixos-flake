@@ -23,6 +23,7 @@
         address = [ "10.13.13.3/24" ];
         dns = [ "10.13.13.1" ];
         privateKeyFile = "/etc/wireguard/mom-house/private.key";
+        listenPort = [ 51820 ];
         peers = [
           {
             publicKey = "29Sy3/sbHuBiI8xDSzRmwN0RTMjb9DsfeHwO4NNb5lY=";
