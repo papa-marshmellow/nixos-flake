@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   networking.wg-quick.interfaces = {
-    wg0 = {
+    mom-house = {
       address = [ "10.13.13.3/24" ];
       dns = [ "10.13.13.1" ];
       privateKeyFile = "/etc/wireguard/mom-house/private.key";

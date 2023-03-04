@@ -13,6 +13,5 @@
     ( import ./rofi.nix )
     ( import ./git.nix )
     ( import ./urxvt.nix )
-    ( import ./wireguard.nix )
   ];
 }
