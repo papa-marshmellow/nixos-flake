@@ -37,18 +37,6 @@
   # Enable pasystray
   services.pasystray.enable = true;
 
-  # Enable spotifyd
-  services.spotifyd = {
-    enable = true;
-    settings = {
-      global = {
-        username = "Logan Logan";
-        password = /home/lowgain/Passwords/Spotify;
-        device_name = "Fridge";
-      };
-    };
-  };
-
   xsession = {
     windowManager = {
       bspwm = {
