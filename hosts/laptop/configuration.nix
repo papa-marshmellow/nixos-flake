@@ -7,13 +7,11 @@
   boot.initrd.verbose = false;
 
   boot.loader = {
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot/efi";
-    };
-    systemd-boot = {
+    efi.canTouchEfiVariables = true;
+    grub = {
       enable = true;
-      configurationLimit = 5;
+      efiSupport = true;
+      device = "nodev";
     };
   };
 
