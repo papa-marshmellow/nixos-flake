@@ -1,6 +1,9 @@
 { config, pkgs, ... }:
 
 {
+
+  imports = [( import ../../modules/lemp-stack.nix )];
+
   boot.kernelPackages = pkgs.linuxPackages_zen;
   boot.kernelParams = [ "quiet" "splash" "udev.log_level=3" ];
   boot.consoleLogLevel = 0;

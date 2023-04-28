@@ -27,10 +27,9 @@
     xfce.thunar
     deluge
     mate.atril
-#    ardour
 #    swh_lv2
 #    lsp-plugins
-#    guitarix
+   guitarix
 #    tonelib-metal
 #    tonelib-gfx
     gimp
@@ -51,7 +50,7 @@
   services.pasystray.enable = true;
 
   # Enable ncspot
-  services.ncspot = {
+  programs.ncspot = {
     enable = true;
     settings = {
     };
@@ -66,7 +65,6 @@
           "mullvad-vpn"
           "deluge-gtk"
           "blueman-applet"
-          "jamesdsp"
           "feh --bg-fill $HOME/.background-image.*"
         ];
         monitors = {

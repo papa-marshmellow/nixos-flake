@@ -104,7 +104,7 @@
   users.users.lowgain = {
     isNormalUser = true;
     description = "Logan Thompson";
-    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "audio" ];
     initialPassword = "password";
   };
 

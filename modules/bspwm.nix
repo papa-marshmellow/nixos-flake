@@ -5,6 +5,7 @@
     enable = true;
     settings = {
       border_width = 2;
+      border_radius = 6;
       window_gap = 10;
       split_ratio = 0.5;
       focus_follows_pointer = true;

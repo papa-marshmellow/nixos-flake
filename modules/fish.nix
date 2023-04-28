@@ -15,6 +15,7 @@
       "ll" = "exa -l";
       "la" = "exa -la";
       "grep" = "rg";
+      "abcde" = "abcde -Gpxo flac";
     };
   };
 }
