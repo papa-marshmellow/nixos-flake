@@ -49,7 +49,6 @@
         startupPrograms = [
           "polybar mybar -r"
           "mullvad-vpn"
-          "deluge-gtk"
           "blueman-applet"
           "feh --bg-fill $HOME/.wall.*"
         ];
