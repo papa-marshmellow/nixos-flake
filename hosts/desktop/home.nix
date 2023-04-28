@@ -35,6 +35,8 @@
     jamesdsp
     cura
     openscad
+    discord
+    ncspot
   ];
 
   # Bluetooth tray applet
@@ -43,17 +45,9 @@
   # Enable pasystray
   services.pasystray.enable = true;
 
-  # Enable spotify command line client
-  programs.ncspot = {
-    enable = true;
-    settings = {
-    };
-  };
-
   xsession = {
     windowManager = {
       bspwm = {
-        startupPrograms = [
           "$HOME/.screenlayout/default.sh"
           "polybar mybar -r"
           "deluge-gtk"

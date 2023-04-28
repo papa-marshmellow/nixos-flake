@@ -27,8 +27,7 @@
     libreoffice
     cmus
     jamesdsp
-    spotify-tui
-    gtkcord4
+    ncspot
   ];
 
   # Bluetooth tray applet
