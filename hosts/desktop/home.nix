@@ -27,17 +27,12 @@
     xfce.thunar
     deluge
     mate.atril
-#    swh_lv2
-#    lsp-plugins
-   guitarix
-#    tonelib-metal
-#    tonelib-gfx
+    guitarix
     gimp
     libreoffice
     openrgb
     abcde
     jamesdsp
-    spotify-tui
     gtkcord4
     cura
     openscad
@@ -49,7 +44,7 @@
   # Enable pasystray
   services.pasystray.enable = true;
 
-  # Enable ncspot
+  # Enable spotify command line client
   programs.ncspot = {
     enable = true;
     settings = {
