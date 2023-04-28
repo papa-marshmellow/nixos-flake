@@ -143,7 +143,7 @@
   ];
 
   system = {
-    stateVersion = "23.05";
+    stateVersion = "22.11";
     autoUpgrade = {
       enable = true;
       channel = "https://nixos.org/channels/nixos-22.11/";
