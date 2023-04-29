@@ -27,7 +27,6 @@
     libreoffice
     cmus
     jamesdsp
-    ncspot
   ];
 
   # Bluetooth tray applet
@@ -36,12 +35,8 @@
   # Enable pasystray
   services.pasystray.enable = true;
 
-  # Enable ncspot
-  services.ncspot = {
-    enable = true;
-    settings = {
-    };
-  };
+  # Enable spotify ncurses terminal client
+  programs.ncspot.enable = true;
 
   xsession = {
     windowManager = {

@@ -36,7 +36,6 @@
     cura
     openscad
     discord
-    ncspot
   ];
 
   # Bluetooth tray applet
@@ -44,6 +43,9 @@
 
   # Enable pasystray
   services.pasystray.enable = true;
+
+  # enable spotify ncurses terminal client
+  programs.ncspot.enable = true;
 
   xsession = {
     windowManager = {
