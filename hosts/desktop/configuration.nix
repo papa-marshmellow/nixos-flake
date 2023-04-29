@@ -40,6 +40,15 @@
   # Enable phone mounting
   services.gvfs.enable = true;
 
+  # Enable docker containers
+  virtualisation.docker = {
+    enable = true;
+    autoPrune = {
+      enable = true;
+      dates = "daily";
+    };
+  };
+
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     virt-manager
