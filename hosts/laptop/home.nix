@@ -38,11 +38,7 @@
   services.pasystray.enable = true;
 
   # Enable ncspot
-  services.ncspot = {
-    enable = true;
-    settings = {
-    };
-  };
+  programs.ncspot.enable = true;
 
   xsession = {
     windowManager = {

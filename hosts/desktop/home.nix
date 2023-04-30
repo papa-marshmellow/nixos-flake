@@ -45,11 +45,7 @@
   services.pasystray.enable = true;
 
   # Enable spotify command line client
-  programs.ncspot = {
-    enable = true;
-    settings = {
-    };
-  };
+  programs.ncspot.enable = true;
 
   xsession = {
     windowManager = {
