@@ -36,6 +36,7 @@
     gtkcord4
     cura
     openscad
+    awscli2
   ];
 
   # Bluetooth tray applet
