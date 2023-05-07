@@ -36,6 +36,7 @@
     cura
     openscad
     discord
+    awscli2
   ];
 
   # Bluetooth tray applet

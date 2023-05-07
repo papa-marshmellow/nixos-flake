@@ -27,6 +27,7 @@
     libreoffice
     cmus
     jamesdsp
+    awscli2
   ];
 
   # Bluetooth tray applet
