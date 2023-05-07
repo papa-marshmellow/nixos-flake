@@ -46,6 +46,7 @@
           "mullvad-vpn"
           "blueman-applet"
           "feh --bg-fill $HOME/.wall.*"
+          "jamesdsp -t"
         ];
         monitors = {
           eDP = [ "1" "2" "3" "4" "5" "6" "7" "8" "9" "0" ];
