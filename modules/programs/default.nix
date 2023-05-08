@@ -1,5 +1,5 @@
 [
-  ./rofi.nix
-  ./urxvt.nix
+  ./wofi.nix
+  ./foot.nix
   ./vscode.nix
 ]

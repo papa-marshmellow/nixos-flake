@@ -4,7 +4,6 @@
 
   imports = [
     ( import ./hardware-configuration.nix )
-    ( import ../../modules/desktop/bspwm )
     ( import ../../modules/virtualisation )
   ];
 

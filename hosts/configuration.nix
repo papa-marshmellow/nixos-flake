@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ( import ../../modules/desktop/hyprland )
     ( import ../modules/shell )
     ( import ../modules/nvim )
   ];

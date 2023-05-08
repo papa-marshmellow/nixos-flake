@@ -18,12 +18,21 @@ in
     inherit system;
     modules = [
       nur.nixosModules.nur
+      hyprland.nixosModules.default
       ./configuration.nix
       ./desktop
       home-manager.nixosModules.home-manager {
         home-manager = {
           useGlobalPkgs = true;
           useUserPackages = true;
+          extraSpecialArgs = {
+            inherit user;
+            host = {
+              hostName = "desktop";
+              mainMonitor = "DP-0";
+              secondMonitor = "HDMI-A-1";
+            };
+          };            
           users.${user} = {
             imports = [
               ./home.nix
@@ -39,12 +48,20 @@ in
     inherit system;
     modules = [
       nur.nixosModules.nur
+      hyprland.nixosModules.default
       ./configuration.nix
       ./laptop
       home-manager.nixosModules.home-manager {
         home-manager = {
           useGlobalPkgs = true;
           useUserPackages = true;
+          extraSpecialArgs = {
+            inherit user;
+            host = {
+              hostName = "laptop";
+              mainMonitor = "eDP-1";
+            };
+          };            
           users.${user} = {
             imports = [
               ./home.nix
@@ -60,12 +77,20 @@ in
     inherit system;
     modules = [
       nur.nixosModules.nur
+      hyprland.nixosModules.default
       ./configuration.nix
       ./vm
       home-manager.nixosModules.home-manager {
         home-manager = {
           useGlobalPkgs = true;
           useUserPackages = true;
+          extraSpecialArgs = {
+            inherit user;
+            host = {
+              hostName = "vm";
+              mainMonitor = "VIRTUAL-1";
+            };
+          };            
           users.${user} = {
             imports = [
               ./home.nix
