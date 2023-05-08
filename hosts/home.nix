@@ -42,7 +42,6 @@
       # Desktop Environment Deps
       pavucontrol
       ffmpeg_5
-      polybar
 
       # Applications
       ipmitool
