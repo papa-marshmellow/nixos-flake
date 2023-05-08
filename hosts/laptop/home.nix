@@ -1,58 +1,22 @@
 { config, pkgs, ... }:
 
 {
-  imports = [( import ../../modules )];
 
-  # Home Manager needs a bit of information about you and the
-  # paths it should manage.
-  home.username = "lowgain";
-  home.homeDirectory = "/home/lowgain";
-
-  home.stateVersion = "22.11";
-
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
-
-  # Enable unfree packages
-  nixpkgs.config.allowUnfree = true;
+  imports = [
+    ( import ../../modules/desktop/bspwm/home.nix )
+  ];
 
   # Install applications
   home.packages = with pkgs; [
-    librewolf
+    libreoffice
     brightnessctl
-    xfce.thunar
     gnucash
     deluge
-    mate.atril
-    libreoffice
-    cmus
     jamesdsp
-    awscli2
   ];
 
   # Bluetooth tray applet
   services.blueman-applet.enable = true;
 
-  # Enable pasystray
-  services.pasystray.enable = true;
-
-  # Enable spotify ncurses terminal client
-  programs.ncspot.enable = true;
-
-  xsession = {
-    windowManager = {
-      bspwm = {
-        startupPrograms = [
-          "polybar mybar -r"
-          "mullvad-vpn"
-          "blueman-applet"
-          "feh --bg-fill $HOME/.wall.*"
-          "jamesdsp -t"
-        ];
-        monitors = {
-          eDP = [ "1" "2" "3" "4" "5" "6" "7" "8" "9" "0" ];
-        };
-      };
-    };
-  };
+  xsession.windowManager.bspwm.monitors.eDP = [ "1" "2" "3" "4" "5" "6" "7" "8" "9" "0" ];
 }

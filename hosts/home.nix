@@ -23,6 +23,7 @@
       xorg.xkill
       tldr
       appimage-run
+      xfce.thunar
 
       # Compression
       p7zip
@@ -44,7 +45,9 @@
       ffmpeg_5
 
       # Applications
+      mate.atril
       ipmitool
+      librewolf
       firefox
       ranger
       keepassxc
@@ -53,6 +56,9 @@
       xfce.xfce4-screenshooter
       feh
       mpv
+      cmus
+      awscli2
+      discord
     ];
 
     file.".config/wall".source = ../modules/themes/wall;
@@ -100,6 +106,13 @@
     # Flash drive mounting
     udiskie.enable = true;
 
+    # Enable pasystray
+    pasystray.enable = true;
+
   };
+
+
+  # Enable ncspot
+  programs.ncspot.enable = true;
 
 }
