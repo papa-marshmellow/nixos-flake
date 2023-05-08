@@ -13,12 +13,18 @@
       vscodevim.vim
       jdinhlife.gruvbox
       zhuangtongfa.material-theme
+      ms-azuretools.vscode-docker
+      eamodio.gitlens
+      bbenoise.nix
     ];
     userSettings = {
       "files.autoSave" = "off";
       "editor.tabSize" = 2;
       "editor.insertSpaces" = true;
-      "editor.detectIndentation" = false;
+      "editor.detectIndentation" = true;
+      "editor.fontFamily": "FiraCode Nerd Font Mono",
+      "editor.fontLigatures": true,
+      "
     };
   };
 }

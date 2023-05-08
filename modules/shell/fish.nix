@@ -8,8 +8,6 @@
       "home" = "cd ~ && clear";
       ".." = "cd ..";
       "..." = "cd ../..";
-      "vim" = "nvim";
-      "vi" = "nvim";
       "find" = "fd";
       "ls" = "exa";
       "ll" = "exa -l";

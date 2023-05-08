@@ -16,7 +16,7 @@
 
       style = ''
         * {
-          border: none;
+          border: 2px;
           font-family: FiraCode Nerd Font Mono;
           font-size: 12px;
           text-shadow: 0px 0px 5px #000000;
@@ -25,7 +25,7 @@
           background-color: rgba(80,100,100,0.4);
         }
         window#waybar {
-          background-color: rgba(0,0,0,0.5);
+          background-color: #002b36aa;
           background: transparent;
           transition-property: background-color;
           transition-duration: .5s;
@@ -38,19 +38,13 @@
         #mode,
         #clock,
         #pulseaudio,
-        #custom-sink,
         #network,
         #mpd,
         #network,
         #battery,
-        #custom-ds4,
         #tray {
           color: #999999;
           background-clip: padding-box;
-        }
-        #custom-menu {
-          color: #A7C7E7;
-          padding: 0px 5px 0px 5px;
         }
         #workspaces button {
           padding: 0px 5px;
@@ -128,7 +122,7 @@
             #format-alt = "{:%A, %B %d, %Y} ";
           };
           backlight = {
-            device = "intel_backlight";
+            device = "amd_backlight";
             format= "{percent}% <span font='11'>{icon}</span>";
             format-icons = ["" ""];
             on-scroll-down = "${pkgs.light}/bin/light -U 5";

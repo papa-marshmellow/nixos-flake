@@ -21,10 +21,10 @@
       ripgrep
       exa
       fd
-      xorg.xkill
       tldr
       appimage-run
       xfce.thunar
+      light
 
       # Compression
       p7zip
@@ -54,12 +54,12 @@
       keepassxc
       neofetch
       cmatrix
-      xfce.xfce4-screenshooter
-      feh
+      mvi
       mpv
       cmus
       awscli2
-      discord
+      webcord
+      flameshot
     ];
 
     file.".config/wall".source = ../modules/themes/wall;
