@@ -1,4 +1,4 @@
-{ config, lib, pkgs, user, ... }:
+{ pkgs, user, ... }:
 
 {
   imports = [
@@ -7,9 +7,12 @@
     ( import ../modules/services )
   ];
 
+  programs.home-manager.enable = true;
+
   home = {
     username = "${user}";
     homeDirectory = "/home/${user}";
+    stateVersion = "23.05";
 
     packages = with pkgs; [
       # System apps
@@ -70,11 +73,6 @@
       name = "numix-cursor-dark";
       size = 32;
     };
-    stateVersion = "23.05";
-  };
-
-  programs = {
-    home-manager.enable = true;
   };
 
   gtk = {

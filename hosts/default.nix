@@ -16,6 +16,14 @@ in
 
   desktop = lib.nixosSystem {
     inherit system;
+    specialArgs = {
+      inherit inputs user location hyprland system;
+      host = {
+        hostName = "desktop";
+        mainMonitor = "DP-0";
+        secondMonitor = "HDMI-A-0";
+      };
+    };      
     modules = [
       nur.nixosModules.nur
       hyprland.nixosModules.default
@@ -46,6 +54,13 @@ in
 
   laptop = lib.nixosSystem {
     inherit system;
+    specialArgs = {
+      inherit inputs user location hyprland system;
+      host = {
+        hostName = "laptop";
+        mainMonitor = "eDP";
+      };
+    };      
     modules = [
       nur.nixosModules.nur
       hyprland.nixosModules.default
@@ -59,7 +74,7 @@ in
             inherit user;
             host = {
               hostName = "laptop";
-              mainMonitor = "eDP-1";
+              mainMonitor = "eDP";
             };
           };            
           users.${user} = {
@@ -75,6 +90,13 @@ in
 
   vm = lib.nixosSystem {
     inherit system;
+    specialArgs = {
+      inherit inputs user location hyprland system;
+      host = {
+        hostName = "vm";
+        mainMonitor = "VIRTUAL-1";
+      };
+    };      
     modules = [
       nur.nixosModules.nur
       hyprland.nixosModules.default
