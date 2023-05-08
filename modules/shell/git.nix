@@ -7,7 +7,9 @@
     userEmail = "logan.t2020@tutanota.com";
   };
 
-  programs.gh = {
-    enable = true;
-  };
+  # Enable github cli
+  programs.gh.enable = true;
+
+  # Enable the ssh key agent on boot
+  programs.ssh.startAgent = true;
 }

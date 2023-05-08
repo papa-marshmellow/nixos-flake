@@ -4,7 +4,7 @@
 
   imports = [
    ( import ./hardware-configuration.nix )
-   ( import ../../modules/desktop/bspwm)
+   ( import ../../modules/desktop/bspwm )
    ( import ../../modules/virtualization )
   ];
 
@@ -30,9 +30,6 @@
 
   # Mullvad VPN
   services.mullvad-vpn.enable = true;
-
-  # Enable the ssh key agent on boot
-  programs.ssh.startAgent = true;
 
   # Bluetooth enable
   hardware.bluetooth.enable = true;
