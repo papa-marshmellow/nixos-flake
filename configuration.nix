@@ -1,8 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ /etc/nixos/hardware-configuration.nix ];
-
   environment = {
     variables = {
       TERMINAL = "urxvt";
