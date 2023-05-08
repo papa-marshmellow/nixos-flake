@@ -1,8 +1,9 @@
-{ config, pkgs, ... }:
+{ pkgs, lib, user, ... }:
 
 {
 
-  imports = [ ./hardware-configuration.nix ];
+  imports = 
+    ( import ./hardware-configuration.nix );
 
   boot.kernelPackages = pkgs.linuxPackages_zen;
   boot.kernelParams = [ "quiet" "splash" "udev.log_level=3" ];

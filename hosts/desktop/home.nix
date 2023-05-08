@@ -1,25 +1,10 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
-    ( import ../../modules )
-    ( import ../../modules/mangohud.nix)
+    ( import ../../modules/desktop/bspwm/home.nix )
   ];
 
-  # Home Manager needs a bit of information about you and the
-  # paths it should manage.
-  home.username = "lowgain";
-  home.homeDirectory = "/home/lowgain";
-
-  home.stateVersion = "23.05";
-
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
-
-  # Enable unfree packages
-  nixpkgs.config.allowUnfree = true;
-
-  # Install applications
   home.packages = with pkgs; [
     librewolf
     cmus
@@ -33,7 +18,7 @@
     openrgb
     abcde
     jamesdsp
-    gtkcord4
+    discord
     cura
     openscad
     awscli2
@@ -48,22 +33,7 @@
   # Enable spotify command line client
   programs.ncspot.enable = true;
 
-  xsession = {
-    windowManager = {
-      bspwm = {
-        startupPrograms = [
-          "$HOME/.screenlayout/default.sh"
-          "polybar mybar -r"
-          "mullvad-vpn"
-          "deluge-gtk"
-          "blueman-applet"
-          "feh --bg-fill $HOME/.background-image.*"
-          "jamesdsp -t"
-        ];
-        monitors = {
-          DisplayPort-0 = [ "2" "3" "4" "5" "6" "7" "8" "9" "0" ];
-        };
-      };
-    };
+  xsession.windowManager.bspwm.monitors = {
+    DisplayPort-0 = [ "2" "3" "4" "5" "6" "7" "8" "9" "0" ];
   };
 }

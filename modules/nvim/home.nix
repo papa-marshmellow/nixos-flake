@@ -3,7 +3,13 @@
 {
   programs.neovim = {
     enable = true;
+    viAlias = true;
+    vimAlias = true;
     plugins = with pkgs.vimPlugins; [
+      vim-nix
+      vim-markdown
+      auto-pairs
+      vim-gitgutter
       nerdcommenter
       vim-fugitive
       neovim-sensible
@@ -16,11 +22,11 @@
       editorconfig-vim
       neoformat
       NeoSolarized
-      nvim-autopairs
       indent-blankline-nvim
-      # YouCompleteMe
+      nerdtree
     ];
     extraConfig = ''
+      syntax enable
       let g:airline_theme="solarized"
       let mapleader=","
       highlight colorcolumn ctermbg=36

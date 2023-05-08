@@ -2,7 +2,11 @@
 
 {
 
-  imports = [ ./hardware-configuration.nix ];
+  imports = [
+   ( import ./hardware-configuration.nix )
+   ( import ../../modules/desktop/bspwm)
+   ( import ../../modules/virtualization )
+  ];
 
   boot.kernelPackages = pkgs.linuxPackages_zen;
   boot.kernelParams = [ "quiet" "splash" "udev.log_level=3" ];
@@ -33,25 +37,5 @@
   # Bluetooth enable
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
-
-  # Enable Qemu/KVM
-  virtualisation.libvirtd.enable = true;
-
-  # Enable phone mounting
-  services.gvfs.enable = true;
-
-  # Enable docker containers
-  virtualisation.docker = {
-    enable = true;
-    autoPrune = {
-      enable = true;
-      dates = "daily";
-    };
-  };
-
-  nixpkgs.config.allowUnfree = true;
-  environment.systemPackages = with pkgs; [
-    virt-manager
-  ];
 
 }
