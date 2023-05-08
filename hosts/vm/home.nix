@@ -1,6 +1,11 @@
 { config, pkgs, ... }:
 
 {
+
+  imports = [
+    ( import ../../modules/desktop/bspwm/home.nix )
+  ];
+
   # Install applications
   # home.packages = with pkgs; [
   # ];
