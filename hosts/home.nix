@@ -63,7 +63,7 @@
       name = "numix-cursor-dark";
       size = 32;
     };
-    stateVersion = "23.05";
+    stateVersion = "22.11";
   };
 
   programs = {
