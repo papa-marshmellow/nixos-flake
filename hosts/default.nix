@@ -1,4 +1,4 @@
-{ lib, inputs, nixpkgs, home-manager, user, ... }:
+{ lib, inputs, nixpkgs, home-manager, user, nur, ... }:
 
 let
 
@@ -17,6 +17,7 @@ in
   desktop = lib.nixosSystem {
     inherit system;
     modules = [
+      nur.nixosModules.nur
       ./configuration.nix
       ./desktop
       home-manager.nixosModules.home-manager {
@@ -37,6 +38,7 @@ in
   laptop = lib.nixosSystem {
     inherit system;
     modules = [
+      nur.nixosModules.nur
       ./configuration.nix
       ./laptop
       home-manager.nixosModules.home-manager {
@@ -57,6 +59,7 @@ in
   vm = lib.nixosSystem {
     inherit system;
     modules = [
+      nur.nixosModules.nur
       ./configuration.nix
       ./vm
       home-manager.nixosModules.home-manager {
