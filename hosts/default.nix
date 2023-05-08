@@ -1,4 +1,4 @@
-{ lib, inputs, nixpkgs, home-manager, user, ... }:
+{ lib, inputs, nixpkgs, home-manager, user, nur, ... }:
 
 let
 
@@ -19,6 +19,7 @@ in
     modules = [
       ./configuration.nix
       ./desktop
+      nur.nixosModules.nur
       home-manager.nixosModules.home-manager {
         home-manager = {
           useGlobalPkgs = true;
@@ -39,6 +40,7 @@ in
     modules = [
       ./configuration.nix
       ./laptop
+      nur.nixosModules.nur
       home-manager.nixosModules.home-manager {
         home-manager = {
           useGlobalPkgs = true;
@@ -59,6 +61,7 @@ in
     modules = [
       ./configuration.nix
       ./vm
+      nur.nixosModules.nur
       home-manager.nixosModules.home-manager {
         home-manager = {
           useGlobalPkgs = true;
