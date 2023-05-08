@@ -68,7 +68,6 @@
   };
 
   fonts.fonts = with pkgs; [
-    ubuntu_font_family
     font-awesome
     corefonts
     carlito

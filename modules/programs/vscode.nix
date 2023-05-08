@@ -18,7 +18,9 @@
       "files.autoSave" = "off";
       "editor.tabSize" = 2;
       "editor.insertSpaces" = true;
-      "editor.detectIndentation" = false;
+      "editor.detectIndentation" = true;
+      "editor.fontFamily" = "FiraCode Nerd Font Mono";
+      "editor.fontLigatures" = true;
     };
   };
 }

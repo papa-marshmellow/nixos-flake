@@ -7,6 +7,6 @@
     extraConfig = {
       modi = "drun,run,ssh";
     };
-    font = "Ubuntu Mono 14";
+    font = "FiraCode Nerd Font Mono 14";
   };
 }
