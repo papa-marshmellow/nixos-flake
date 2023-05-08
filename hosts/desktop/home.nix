@@ -15,6 +15,7 @@
     abcde
     cura
     openscad
+    jamesdsp
   ];
 
   # Bluetooth tray applet
