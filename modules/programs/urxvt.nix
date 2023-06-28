@@ -8,7 +8,7 @@
       "Shift-Control-C" = "eval:selection_to_clipboard";
       "Shift-Control-V" = "eval:paste_clipboard";
     };
-    fonts = [ "xft:FiraCode Nerd Font Mono:pixelsize=28" ];
+    fonts = [ "xft:FiraCode Nerd Font:size=14" ];
     scroll.bar.enable = false;
     extraConfig = {
       depth = 32;

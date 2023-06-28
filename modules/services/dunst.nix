@@ -13,7 +13,7 @@
         frame_color = "#2AA198";
         background = "#002B36";
         foreground = "#FDF6E3";
-        font = "FiraCode Nerd Font Mono 14";
+        font = "FiraCode Nerd Font Mono 12";
       };
     };
   };

@@ -43,6 +43,8 @@
   security.rtkit.enable = true;
   security.polkit.enable = true;
 
+  programs.ssh.startAgent = true;
+
   # Enable sound
   services.pipewire = {
     enable = true;

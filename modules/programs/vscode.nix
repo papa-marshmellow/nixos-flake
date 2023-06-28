@@ -19,7 +19,7 @@
       "editor.tabSize" = 2;
       "editor.insertSpaces" = true;
       "editor.detectIndentation" = true;
-      "editor.fontFamily" = "FiraCode Nerd Font Mono";
+      "editor.fontFamily" = "FiraCode Nerd Font";
       "editor.fontLigatures" = true;
     };
   };

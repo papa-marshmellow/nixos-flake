@@ -16,6 +16,9 @@ in
 
   desktop = lib.nixosSystem {
     inherit system;
+    specialArgs = {
+      inherit inputs system user;
+    };
     modules = [
       nur.nixosModules.nur
       ./configuration.nix
@@ -24,6 +27,9 @@ in
         home-manager = {
           useGlobalPkgs = true;
           useUserPackages = true;
+          extraSpecialArgs = {
+            inherit user;
+          };
           users.${user} = {
             imports = [
               ./home.nix

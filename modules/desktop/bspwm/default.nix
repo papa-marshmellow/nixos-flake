@@ -12,7 +12,6 @@
       displayManager = {
         lightdm = {
           enable = true;
-          background = ;
           greeters = {
             gtk = {
               theme = {

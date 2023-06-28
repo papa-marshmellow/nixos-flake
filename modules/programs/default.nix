@@ -1,5 +1,7 @@
-[
-  ./rofi.nix
-  ./urxvt.nix
-  ./vscode.nix
-]
+{
+  imports = [
+    ( import ./rofi.nix )
+    ( import ./urxvt.nix )
+    ( import ./vscode.nix )
+  ];
+}

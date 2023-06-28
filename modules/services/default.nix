@@ -1,6 +1,9 @@
-[
-  ./dunst.nix
-  ./picom.nix
-  ./polybar.nix
-  ./sxhkd.nix
-]
+{
+  imports = [
+    ( import ./dunst.nix )
+    ( import ./picom.nix )
+    ( import ./polybar.nix )
+    ( import ./sxhkd.nix )
+    ( import ./git.nix )
+  ];
+}

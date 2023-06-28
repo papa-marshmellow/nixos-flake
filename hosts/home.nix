@@ -87,7 +87,7 @@
       name = "NumixSolarizedDarkCyan";
     };
     font = {
-      name = "FiraCode Nerd Font Mono";
+      name = "FiraCode Nerd Font";
     };
   };
 

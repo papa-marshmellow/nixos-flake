@@ -16,6 +16,9 @@
     cura
     openscad
     jamesdsp
+    beets
+    spotdl
+    brasero
   ];
 
   # Bluetooth tray applet

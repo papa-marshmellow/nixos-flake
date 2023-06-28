@@ -16,7 +16,7 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, nur, ... }:
+  outputs = inputs @ { self, nixpkgs, home-manager, nur, ... }:
 
   let
 

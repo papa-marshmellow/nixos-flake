@@ -19,7 +19,7 @@
         cursor-click = "pointer";
         cursor-scroll = "ns-resize";
         enable-ipc = "true";
-        font-0 = "FiraCode Nerd Font Mono:pixelsize=17;2";
+        font-0 = "FiraCode Nerd Font Mono:pixelsize=14;2";
         foreground = "\${colors.foreground}";
         height = "30px";
         module-margin = 1;

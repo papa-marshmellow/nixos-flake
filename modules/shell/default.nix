@@ -1,4 +1,5 @@
-[
-  ./fish.nix
-  ./git.nix
-]
+{
+  imports = [
+    ( import ./fish.nix )
+  ];
+}

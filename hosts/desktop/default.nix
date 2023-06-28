@@ -1,11 +1,11 @@
-{ config, pkgs, ... }:
+{ pkgs, lib, user, ... }:
 
 {
 
   imports = [
    ( import ./hardware-configuration.nix )
    ( import ../../modules/desktop/bspwm )
-   ( import ../../modules/virtualization )
+   ( import ../../modules/virtualisation )
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_zen;
