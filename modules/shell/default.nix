@@ -1,0 +1,5 @@
+{
+  imports = [
+    ( import ./fish.nix )
+  ];
+}
