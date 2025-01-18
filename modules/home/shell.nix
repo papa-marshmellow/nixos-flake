@@ -1,9 +1,9 @@
 { ... }:
 {
   programs = {
-    fish = {
+    bash = {
       enable = true;
-      interactiveShellInit = "set fish_greeting";
+      enableCompletion = true;
       shellAliases = {
         "cls" = "clear";
         "home" = "cd ~ && clear";
