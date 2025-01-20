@@ -15,6 +15,6 @@ in
   services.openssh.enable = true;
   programs.ssh = {
     startAgent = true;
-    extraConfig = "AddKeysToAgent Yes"
+    extraConfig = "AddKeysToAgent Yes";
   };
 }
