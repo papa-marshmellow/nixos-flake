@@ -1,20 +1,20 @@
 { ... }:
 {
+  home.shellAliases = {
+    "cls" = "clear";
+    "home" = "cd ~ && clear";
+    ".." = "cd ..";
+    "..." = "cd ../..";
+    "find" = "fd";
+    "ls" = "eza";
+    "ll" = "eza -l";
+    "la" = "eza -la";
+    "grep" = "rg";
+  };
   programs = {
     bash = {
       enable = true;
       enableCompletion = true;
-      shellAliases = {
-        "cls" = "clear";
-        "home" = "cd ~ && clear";
-        ".." = "cd ..";
-        "..." = "cd ../..";
-        "find" = "fd";
-        "ls" = "eza";
-        "ll" = "eza -l";
-        "la" = "eza -la";
-        "grep" = "rg";
-      };
     };
 
     # Type `z <pat>` to cd to some directory

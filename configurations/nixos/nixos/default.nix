@@ -18,4 +18,10 @@ in
     imports = [ (self + /configurations/home/lowgain.nix) ];
   };
   home-manager.backupFileExtension = "backup";
+
+  services.openssh.enable = true;
+  programs.ssh = {
+    enable = true;
+    addKeysToAgent = "yes";
+  };
 }

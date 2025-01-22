@@ -14,6 +14,8 @@
     neofetch
     cmatrix
     cbonsai
+    usbutils
+    pciutils
 
     # Compression
     p7zip
@@ -31,6 +33,9 @@
     nil # Nix language server
     nix-info
     nixpkgs-fmt
+
+    # Other
+    cmus
   ];
 
   # Programs natively supported by home-manager.
@@ -41,19 +46,13 @@
     # Type `<ctrl> + r` to fuzzy search your shell history
     fzf.enable = true;
     jq.enable = true;
-    # Install btop https://github.com/aristocratos/btop
     btop.enable = true;
     htop.enable = true;
-    # Tmate terminal sharing.
-    tmate = {
-      enable = true;
-      #host = ""; #In case you wish to use a server other than tmate.io 
-    };
     ranger.enable = true;
     eza = {
       enable = true;
-      enableFishIntegration = true;
     };
     ripgrep.enable = true;
+    ncspot.enable = true;
   };
 }

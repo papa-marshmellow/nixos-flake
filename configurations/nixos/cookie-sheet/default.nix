@@ -1,6 +1,6 @@
 # See /modules/nixos/* for actual settings
 # This file is just *top-level* configuration.
-{ flake, ... }:
+{ flake, pkgs, ... }:
 
 let
   inherit (flake) inputs;
@@ -9,8 +9,18 @@ in
 {
   imports = [
     self.nixosModules.default
+    self.nixosModules.gui
     ./configuration.nix
   ];
+
+  # Choose your kernel (default is latest LTS)
+  # boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  services.openssh.enable = true;
+  programs.ssh = {
+    enable = true;
+    addKeysToAgent = "yes";
+  };
 
   # Enable home-manager for "lowgain" user
   home-manager.users."lowgain" = {
